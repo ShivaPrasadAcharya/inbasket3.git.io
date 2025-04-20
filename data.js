@@ -1,6 +1,49 @@
 // Sample letter data array
 // This array will be populated with all the letter entries
 const letterData = [
+
+    {
+        itemNo: "७५१",
+        officeName1: ["महान्यायाधिवक्ताको कार्यालय"],
+        officeName2: ["नेपाल"],
+        contactInfo: [
+            "रामशाहपथ, काठमाडौं",
+            
+        ],
+        department: "(संवैधानिक प्रशासन",
+        mainOffice: "शाखा)",
+        entryNo: "०८१/०८२ (निर्देशन)",
+        entryDate: "",
+        dispatchedNo: "",
+        caseNo: "",
+        date: ["मिति:-२०७१/०७/०६"
+            ],
+        subject: "विषय: निर्देशन सम्बन्धमा।",
+        addressedTo: [
+            "उच्च सरकारी वकील कार्यालय, सबै।",
+            "विशेष सरकारी वकील कार्यालय, काठमाडौं।",
+            "जिल्ला सरकारी वकील कार्यालय, सबै।"
+        ],
+        content: "महान्यायाधिवक्ताको कार्यालय, व्यवस्थापन समितिको निर्णय समेतका आधारमा मानानीय महान्यायाधिवक्ताज्यूबाट मिति २०७१/०७/०५ मा सरकारी वकील सम्बन्धी नियमावली, २०७७ को नियम ४२ बमोजिम निम्न निर्देशन जारी भएको छ। साथै प्रस्तुत निर्देशन यस कार्यालयको च.नं. ६५१ मिति २०७१/०६/०८ को पत्रबाट जारी निर्देशनको निरन्तरता भएकाले यस अघि जारी भएका निर्देशनहरु र प्रस्तुत निर्देशन कार्यान्वयन गर्न गराउन हुन निर्णयानुसार अनुरोध गरिन्छ।\n\nनिर्देशन नं. ५०, फैसला कार्यान्वयनको चरणमा समेत मिलापत्र गर्न पाउने सम्बन्धमा\nसर्वोच्च अदालतको ०७१-WH-००३५ को बन्दीप्रत्यक्षीकरण (राजकुमार पुर्कुटी विरुद्ध काठमाडौं जिल्ला अदालत समेत) मुद्दामा मिति २०७१/०५/३१ मा भएको परमादेशको आदेश समेतलाई मध्येनजर गर्दै मुलुकी फौजदारी कार्यविधि संहिता, २०७४ को दफा ११७(२) बमोजिमका मुद्दामा पीडित र प्रतिवादी बीच जुनसुकै अवस्थामा मिलापत्र हुन सक्ने भएकोले फैसला कार्यान्वयनको चरणमा समेत मिलापत्र गर्न पाउँ भनी पीडित, जाहेरवाला र प्रतिवादीको संयुक्त निवेदन परेमा तत् सम्बन्धमा फौजदारी मुद्दामा मिलापत्र गर्ने आदेश गर्दा अपनाउनु पर्ने मापदण्ड, २०८० बमोजिम आवश्यक प्रक्रिया अवलम्बन गरी फैसला कार्यान्वयनका लागि लगत कायम रहेको जिल्लाको सरकारी वकील कार्यालयले मिलापत्र गराउन आदेश दिने। यस्तो आदेश दिंदा फैसला कार्यान्वयन गर्ने जिल्लाको सरकारी वकील कार्यालयमा सम्बन्धित मुद्दाको मिसिल नभएको अवस्थामा मिसिल रहेको सम्बन्धित सरकारी वकील कार्यालयबाट प्रतिलिपि मिसिल समेत मगाई आवश्यक कारवाही गर्ने।",
+        images: [],
+        signature1: {
+            sign: "",
+            name: "(सूर्यराज दाहाल)",
+            position: "सहन्यायाधिवक्ता"
+        },
+        signature2: {
+            sign: "",
+            name: "",
+            position: ""
+        },
+        footerPhone: "फोन: ४२००५००, ४२००५०१, ४२००६१३, ४२००६१४, ४२००६१६\nफ्याक्स :- ४२००६२७, एक्सटेन्सन :- ४२००६२४, ४२००६२५\nइमेल: info@ag.gov.np, वेबसाइट: www.ag.gov.np",
+        footerEmail: "",
+        tokadesh: "",
+        bodharthaList: [
+            "माननीय महान्यायाधिवक्ताज्यूको सचिवालय।",
+            "श्रीमान् नायब महान्यायाधिवक्ताज्यूहरु।"
+        ]
+    },
     {
         itemNo: "आइटम १",
         officeName1: ["श्री","सर्वोच्च अदालत"],
@@ -40,84 +83,7 @@ const letterData = [
         tokadesh: "श्री रिट फाँट आवश्यक कार्यार्थ ",
         bodharthaList: []
     },
-    {
-        itemNo: "LTR/2025/001",
-        officeName1: ["Office of the Director", "Department of Communications"],
-        officeName2: ["Government of Example", "Ministry of Information"],
-        contactInfo: [
-            "123 Government Plaza, Capital City",
-            "Phone: +1-234-567-8900",
-            "Email: info@govexample.org"
-        ],
-        department: "Communications",
-        mainOffice: "Headquarters",
-        entryNo: "ENT/2025/123",
-        entryDate: "2025-04-15",
-        dispatchedNo: "DISP/2025/456",
-        caseNo: "CASE/2025/789",
-        date: "April 20, 2025",
-        subject: "Regarding the Implementation of New Communication Protocols",
-        addressedTo: "All Department Heads",
-        content: "This letter serves as a formal notification regarding the implementation of new communication protocols that will take effect starting May 1, 2025.\n\nThe new protocols are designed to enhance interdepartmental communication efficiency and ensure that all staff members have access to the information they need in a timely manner.\n\nKey changes include:\n1. Standardized email formats for different types of communications\n2. Weekly departmental briefings\n3. Centralized document sharing system\n\nTraining sessions will be conducted between April 25-30, 2025. Please ensure that all staff members in your respective departments attend these sessions.\n\nYour cooperation in this matter is highly appreciated.",
-        images: [],
-        signature1: {
-            sign: "J. Smith",
-            name: "John Smith",
-            position: "Director of Communications"
-        },
-        signature2: {
-            sign: "S. Johnson",
-            name: "Sarah Johnson",
-            position: "Deputy Director"
-        },
-        footerPhone: "+1-234-567-8901",
-        footerEmail: "j.smith@govexample.org",
-        tokadesh: "Please acknowledge receipt of this letter.",
-        bodharthaList: [
-            "Secretary, Ministry of Information",
-            "IT Department for implementation",
-            "Office records"
-        ]
-    },
-    {
-        itemNo: "LTR/2025/002",
-        officeName1: ["Department of Finance", "Budget Division"],
-        officeName2: ["Government of Example"],
-        contactInfo: [
-            "456 Treasury Building, Capital City",
-            "Phone: +1-234-567-8902",
-            "Email: finance@govexample.org"
-        ],
-        department: "Finance",
-        mainOffice: "Treasury Building",
-        entryNo: "ENT/2025/124",
-        entryDate: "2025-04-16",
-        dispatchedNo: "DISP/2025/457",
-        caseNo: "CASE/2025/790",
-        date: "April 21, 2025",
-        subject: "Q2 Budget Allocation Notification",
-        addressedTo: "All Departmental Finance Officers",
-        content: "This letter is to inform all departmental finance officers that the budget allocations for Q2 2025 have been finalized and approved by the Ministry of Finance.\n\nThe allocated funds will be transferred to respective departmental accounts by April 30, 2025. Please ensure that all Q1 expenditure reports are submitted before April 25, 2025, as any pending reports may delay the transfer of funds.\n\nAttached with this letter is a detailed breakdown of the allocations. If you have any questions or require clarification, please contact the Budget Division.",
-        images: [],
-        signature1: {
-            sign: "R. Williams",
-            name: "Robert Williams",
-            position: "Chief Financial Officer"
-        },
-        signature2: {
-            sign: "",
-            name: "",
-            position: ""
-        },
-        footerPhone: "+1-234-567-8903",
-        footerEmail: "r.williams@govexample.org",
-        tokadesh: "For immediate attention and necessary action.",
-        bodharthaList: [
-            "Ministry of Finance",
-            "Auditor General's Office",
-            "All Department Heads"
-        ]
-    },
+    
     {
         itemNo: "LTR/2025/003",
         officeName1: ["Human Resources Department"],
