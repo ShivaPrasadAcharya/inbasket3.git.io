@@ -2,6 +2,7 @@
 const filterButton = document.getElementById('filterButton');
 const filterPanel = document.getElementById('filterPanel');
 const itemFilter = document.getElementById('itemFilter');
+const letterContent = document.getElementById('letterContent');
 
 // Initialize the letter pad
 document.addEventListener('DOMContentLoaded', function() {
@@ -73,6 +74,66 @@ function populateFilterOptions() {
 
 // Display letter data in the letter pad
 function displayLetter(letter) {
+    // Handle empty page option
+    const emptyPage = letter.emptyPage || 'NO';
+    const emptyPageContent = document.getElementById('emptyPageContent');
+    const emptyContentContainer = document.getElementById('emptyContentContainer');
+    
+    // Set item number (always visible regardless of emptyPage setting)
+    const itemNoContent = Array.isArray(letter.itemNo) ? letter.itemNo[0] : letter.itemNo;
+    const itemNoElement = document.getElementById('itemNo');
+    if (itemNoElement) {
+        if (itemNoContent && itemNoContent.trim() !== '') {
+            itemNoElement.textContent = itemNoContent;
+            itemNoElement.classList.remove('empty');
+        } else {
+            itemNoElement.textContent = '';
+            itemNoElement.classList.add('empty');
+        }
+    }
+    
+    // If emptyPage is YES, hide regular content and show empty page content
+    if (emptyPage.toUpperCase() === 'YES') {
+        letterContent.style.display = 'none';
+        emptyPageContent.style.display = 'block';
+        
+        // Clear previous content
+        emptyContentContainer.innerHTML = '';
+        
+        // Handle emptyEntry content if present
+        if (letter.emptyEntry && letter.emptyEntry.length > 0) {
+            letter.emptyEntry.forEach(item => {
+                if (!item || item.trim() === '') return;
+                
+                // Check if the item is an image URL (local or web)
+                if (item.match(/\.(jpeg|jpg|gif|png)$/i) || 
+                    item.startsWith('http') || 
+                    item.startsWith('www')) {
+                    
+                    const img = document.createElement('img');
+                    img.src = item;
+                    img.className = 'empty-content-image';
+                    img.alt = 'Content image';
+                    img.onerror = function() {
+                        this.style.display = 'none';
+                    };
+                    emptyContentContainer.appendChild(img);
+                } else {
+                    // It's text content
+                    const div = document.createElement('div');
+                    div.className = 'empty-content-text';
+                    div.textContent = item;
+                    emptyContentContainer.appendChild(div);
+                }
+            });
+        }
+        
+        return;
+    } else {
+        letterContent.style.display = 'block';
+        emptyPageContent.style.display = 'none';
+    }
+    
     // Helper function to handle any field - can be string or array
     const displayField = (elementId, content) => {
         const element = document.getElementById(elementId);
@@ -107,20 +168,7 @@ function displayLetter(letter) {
         }
     };
     
-    // Handle item number (special case for the top of the letter)
-    const itemNoContent = Array.isArray(letter.itemNo) ? letter.itemNo[0] : letter.itemNo;
-    const itemNoElement = document.getElementById('itemNo');
-    if (itemNoElement) {
-        if (itemNoContent && itemNoContent.trim() !== '') {
-            itemNoElement.textContent = itemNoContent;
-            itemNoElement.classList.remove('empty');
-        } else {
-            itemNoElement.textContent = '';
-            itemNoElement.classList.add('empty');
-        }
-    }
-    
-    // Display all other fields
+    // Display all fields
     displayField('officeName1', letter.officeName1);
     displayField('officeName2', letter.officeName2);
     displayField('contactInfo', letter.contactInfo);
