@@ -143,13 +143,13 @@ const letterData = [
   "images": ["visit nepal 2020 logo"],
   "signature1": {
     "sign": "",
-    "name": "चन्द्रकुमार पोखरेल",
-    "position": "उप न्यायाधिवक्ता"
-  },
-  "signature2": {
-    "sign": "",
     "name": "",
     "position": ""
+  },
+  "signature2": {
+    "sign": "signature",
+    "name": "चन्द्रकुमार पोखरेल",
+    "position": "उप न्यायाधिवक्ता"
   },
   "footerPhone": "४२००८००, ४२००५०१, ४२००५१६, ४२००५१४, ४२००५१८",
   "footerEmail": "info@attorneygeneral.gov.np",
