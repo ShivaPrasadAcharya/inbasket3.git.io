@@ -192,7 +192,7 @@ function displayLetter(letter) {
                 const img = document.createElement('img');
                 img.src = image;
                 img.className = 'letter-image';
-                img.alt = 'Letter attachment';
+                img.alt = '';
                 imageGallery.appendChild(img);
             }
         });
