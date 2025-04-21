@@ -204,6 +204,42 @@ const letterData = [
         bodharthaList: [""],
         emptyPage: "YES",
         emptyEntry: [
+            " आफ्नै टिपोट ",
+            "राष्ट्रपतिको कार्यालयमा २०७९/८० को वार्षिक प्रतिवेदन बुझाउन जाने कार्यक्रम, अपरान्ह २ बजे",
+                 ]
+    },
+    {
+        itemNo: "आइटम ०",
+        officeName1: [""],
+        officeName2: [""],
+        contactInfo: [""],
+        department: "",
+        mainOffice: "",
+        entryNo: "",
+        entryDate: "",
+        dispatchedNo: "",
+        caseNo: "",
+        date: "",
+        subject: "",
+        addressedTo: [""],
+        content: "",
+        images: [],
+        signature1: {
+            sign: "",
+            name: "",
+            position: ""
+        },
+        signature2: {
+            sign: "",
+            name: "",
+            position: ""
+        },
+        footerPhone: "",
+        footerEmail: "",
+        tokadesh: "",
+        bodharthaList: [""],
+        emptyPage: "YES",
+        emptyEntry: [
             "यो एउटा खाली पृष्ठ हो",
             "flower.png",
             "contact the compiler for enabling this inbasket exercise",
