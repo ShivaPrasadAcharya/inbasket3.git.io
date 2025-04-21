@@ -1,14 +1,14 @@
 // Sample letter data array
 // This array will be populated with all the letter entries
 const letterData = [
-
     {
-        itemNo: "७५१",
+        itemNo: "आइटम १",
         officeName1: ["महान्यायाधिवक्ताको कार्यालय"],
         officeName2: ["नेपाल"],
         contactInfo: [
             "रामशाहपथ, काठमाडौं",
-            
+            "मिति:-२०७१/०७/०६",
+            "ने.स. ११४४ कौलागढ ५"
         ],
         department: "(संवैधानिक प्रशासन",
         mainOffice: "शाखा)",
@@ -16,8 +16,7 @@ const letterData = [
         entryDate: "",
         dispatchedNo: "",
         caseNo: "",
-        date: ["मिति:-२०७१/०७/०६"
-            ],
+        date: "",
         subject: "विषय: निर्देशन सम्बन्धमा।",
         addressedTo: [
             "उच्च सरकारी वकील कार्यालय, सबै।",
@@ -42,10 +41,11 @@ const letterData = [
         bodharthaList: [
             "माननीय महान्यायाधिवक्ताज्यूको सचिवालय।",
             "श्रीमान् नायब महान्यायाधिवक्ताज्यूहरु।"
-        ]
+        ],
+        emptyPage: "NO"
     },
     {
-        itemNo: "आइटम १",
+        itemNo: "आइटम २",
         officeName1: ["श्री","सर्वोच्च अदालत"],
         officeName2: ["मुद्दा तथा रिट महाशाखा"],
         contactInfo: [
@@ -61,7 +61,7 @@ const letterData = [
         caseNo: "०८०-WO-०३५८",
         date: "मिति:२०८० १२ २०",
         subject: "लिखित जवाफ सूचना ।",
-        addressedTo:  [
+        addressedTo: [
             "माननीय महान्यायाधिवक्तज्यूको सचिवालय",
             "नायब महान्यायाधिवक्तज्यूहरु सबै, महान्यायाधिवक्ताको कार्यालय, काठमाडौं।",
             "उच्च सरकारी वकील कार्यालय, सबै, विशेष सरकारी वकील कार्यालय, काठमाडौं, जिल्ला सरकारी वकील कार्यालय, सबै।"
@@ -81,45 +81,46 @@ const letterData = [
         footerPhone: "०१-४२५६२९७",
         footerEmail: "sarbochchadalatrit@supremecourt.gov.np",
         tokadesh: "श्री रिट फाँट आवश्यक कार्यार्थ ",
-        bodharthaList: []
+        bodharthaList: [],
+        emptyPage: "NO",
+        emptyEntry: ["सर्वोच्चको चिठी"]
     },
-    
     {
-        itemNo: "LTR/2025/003",
-        officeName1: ["Human Resources Department"],
-        officeName2: ["Government of Example"],
-        contactInfo: [
-            "789 Administration Block, Capital City",
-            "Phone: +1-234-567-8904",
-            "Email: hr@govexample.org"
-        ],
-        department: "Human Resources",
-        mainOffice: "Administration Block",
-        entryNo: "ENT/2025/125",
-        entryDate: "2025-04-17",
-        dispatchedNo: "DISP/2025/458",
+        itemNo: "आइटम ०",
+        officeName1: [""],
+        officeName2: [""],
+        contactInfo: [""],
+        department: "",
+        mainOffice: "",
+        entryNo: "",
+        entryDate: "",
+        dispatchedNo: "",
         caseNo: "",
-        date: "April 22, 2025",
-        subject: "Annual Employee Performance Review Schedule",
-        addressedTo: "All Government Employees",
-        content: "This letter is to inform all employees that the annual performance review process for the year 2024-2025 will commence on May 5, 2025, and conclude on June 15, 2025.\n\nAll employees are required to complete their self-assessment forms by May 10, 2025. Department heads will conduct individual review meetings between May 15 and June 10, 2025.\n\nThe HR department will provide detailed guidelines and necessary forms via email by April 25, 2025. If you have any questions regarding the review process, please contact the HR department.",
+        date: "",
+        subject: "",
+        addressedTo: [""],
+        content: "",
         images: [],
         signature1: {
-            sign: "M. Chen",
-            name: "Michelle Chen",
-            position: "HR Director"
+            sign: "",
+            name: "",
+            position: ""
         },
         signature2: {
             sign: "",
             name: "",
             position: ""
         },
-        footerPhone: "+1-234-567-8905",
-        footerEmail: "m.chen@govexample.org",
+        footerPhone: "",
+        footerEmail: "",
         tokadesh: "",
-        bodharthaList: [
-            "All Department Heads",
-            "Employee Union Representatives"
+        bodharthaList: [""],
+        emptyPage: "YES",
+        emptyEntry: [
+            "यो एउटा खाली पृष्ठ हो",
+            "flower.png",
+            "contact the compiler for enabling this inbasket exercise",
+            "https://source.unsplash.com/featured/800x600"
         ]
     }
     // Additional entries can be added here following the same structure
