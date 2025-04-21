@@ -7,8 +7,7 @@ const letterData = [
         officeName2: ["नेपाल"],
         contactInfo: [
             "रामशाहपथ, काठमाडौं",
-            "मिति:-२०७१/०७/०६",
-            "ने.स. ११४४ कौलागढ ५"
+        
         ],
         department: "(संवैधानिक प्रशासन",
         mainOffice: "शाखा)",
@@ -16,7 +15,8 @@ const letterData = [
         entryDate: "",
         dispatchedNo: "",
         caseNo: "",
-        date: "",
+        date: ["मिति:-२०७१/०७/०६",
+            "ने.स. ११४४ कौलागढ ५"],
         subject: "विषय: निर्देशन सम्बन्धमा।",
         addressedTo: [
             "उच्च सरकारी वकील कार्यालय, सबै।",
