@@ -1,21 +1,25 @@
-.case-section {
-    text-align: right;
-}/* Department header in letterhead */
-.department-header {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+/* Empty Page Content */
+.empty-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    min-height: 800px;
 }
 
-.department-header > div {
-    margin-bottom: 5px;
-}/* Item Number at top */
-.item-number-top {
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: bold;
+.empty-content-text {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.empty-content-image {
+    max-width: 90%;
+    max-height: 400px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }/* Reset and Base Styles */
 * {
     margin: 0;
@@ -38,6 +42,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     min-height: 1000px; /* Ensure minimum height for letterpad */
+}
+
+/* Item Number at top */
+.item-number-top {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Logo and Letter Header */
@@ -92,15 +104,16 @@ body {
     max-width: 60%;
 }
 
-.office-name {
-    font-size: 20px;
+/* Department header in letterhead */
+.department-header {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-.contact-info {
-    font-size: 14px;
-    color: #555;
+.department-header > div {
+    margin-bottom: 5px;
 }
 
 /* Letter References */
@@ -119,6 +132,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.entry-section, .case-section, .item-section {
+    margin-bottom: 15px;
 }
 
 .date-section {
@@ -197,15 +214,6 @@ body {
     color: #555;
 }
 
-/* Letter Footer */
-.letter-footer {
-    margin-top: 40px;
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
-    font-size: 14px;
-    color: #555;
-}
-
 /* Post Signature Section */
 .post-signature-section {
     margin-top: 30px;
@@ -228,6 +236,15 @@ body {
 .bodartha-list {
     list-style-position: inside;
     padding-left: 20px;
+}
+
+/* Letter Footer */
+.letter-footer {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #555;
 }
 
 /* Filter Controls */
