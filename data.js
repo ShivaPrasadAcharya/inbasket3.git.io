@@ -172,8 +172,41 @@ const letterData = [
   "emptyPage": "NO",
   "emptyEntry": []
 },
+{
+  "itemNo": "आइटम ५",
+  "officeName1": ["नेपाल सरकार"],
+  "officeName2": ["गृह मन्त्रालय"],
+  "contactInfo": ["सिंहदरबार,", "काठमाडौं, नेपाल।"],
+  "department": "",
+  "mainOffice": "गृह मन्त्रालय",
+  "entryNo": "",
+  "entryDate": "",
+  "dispatchedNo": "",
+  "caseNo": "",
+  "date": "२०७६/११/१८",
+  "subject": "सार्वजनिक बिदा सम्बन्धी सूचना",
+  "addressedTo": [""],
+  "content": "\"वि.सं. २०७६ साल फागुन १९ गते बिहीबार ग्यालिपो ल्होसारको उपलक्ष्यमा नेपाल राज्यभरका सबै सरकारी कार्यालय, सार्वजनिक संघ-संस्थाहरुमा सार्वजनिक बिदा दिने\" नेपाल सरकार मन्त्रिपरिषदबाट मिति २०७६/११/१६ मा निर्णय भएको हुँदा सम्बन्धित सबैको जानकारीको लागि यो सूचना प्रकाशित गरिएको छ।",
+  "images": ["watermark: जी के एस"],
+  "signature1": {
+    "sign": "",
+    "name": "बसन्त भट्टराई",
+    "position": "सूचना अधिकारी"
+  },
+  "signature2": {
+    "sign": "",
+    "name": "",
+    "position": ""
+  },
+  "footerPhone": "",
+  "footerEmail": "",
+  "tokadesh": "",
+  "bodharthaList": [""],
+  "emptyPage": "NO",
+  "emptyEntry": []
+},
     {
-        itemNo: "आइटम ५",
+        itemNo: "आइटम ६",
         officeName1: [""],
         officeName2: [""],
         contactInfo: [""],
