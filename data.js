@@ -320,6 +320,44 @@ const letterData = [
             "राष्ट्रपतिको कार्यालयमा २०७९/८० को वार्षिक प्रतिवेदन बुझाउन जाने कार्यक्रम, अपरान्ह २ बजे",
                  ]
     },
+ {
+        itemNo: "आइटम ७",
+        officeName1: [""],
+        officeName2: [""],
+        contactInfo: [""],
+        department: "",
+        mainOffice: "",
+        entryNo: "",
+        entryDate: "",
+        dispatchedNo: "",
+        caseNo: "",
+        date: "",
+        subject: "",
+        addressedTo: [""],
+        content: "",
+        images: [],
+        signature1: {
+            sign: "",
+            name: "",
+            position: ""
+        },
+        signature2: {
+            sign: "",
+            name: "",
+            position: ""
+        },
+        footerPhone: "",
+        footerEmail: "",
+        tokadesh: "",
+        bodharthaList: [""],
+        emptyPage: "YES",
+        emptyEntry: [
+            "",
+            "mobile.png",
+            "",
+            ""
+        ]
+    },
     {
         itemNo: "आइटम ०",
         officeName1: [""],
