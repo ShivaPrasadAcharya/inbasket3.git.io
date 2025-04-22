@@ -186,7 +186,7 @@ const letterData = [
   "images": [],
   "signature1": {
     "sign": "",
-    "name": "बिचास तिमिल्सिना",
+    "name": "विकास तिमिल्सिना",
     "position": "सहायक न्यायाधिवक्ता"
   },
   "signature2": {
